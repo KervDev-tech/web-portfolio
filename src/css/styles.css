@@ -4,13 +4,20 @@
   margin: 0;
   box-sizing: border-box;
   /* outline: 1px solid black; */
+  transition: all 0.3s ease;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   /* background-color: #e5e5e5; */
-  background-color: #ececec;
+  /* background-color: #ececec; */
+  background-color: #f0f0f0;
+}
+.rounded-full {
+  -webkit-box-shadow: 0px 0px 300px 38px rgba(255, 255, 255, 0.53);
+  -moz-box-shadow: 0px 0px 300px 38px rgba(255, 255, 255, 0.53);
+  box-shadow: 0px 0px 300px 38px rgba(255, 255, 255, 0.53);
 }
 .font-prim {
   font-family: "Montserrat" !important;
@@ -47,8 +54,13 @@ body {
 }
 
 @keyframes shimmer {
-    100% {
-       /* setting up mask position at left side */
-       -webkit-mask-position: left
-    }
- }
+  100% {
+    /* setting up mask position at left side */
+    -webkit-mask-position: left;
+  }
+}
+a:hover,
+.card-portfolio:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
